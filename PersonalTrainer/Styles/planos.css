@@ -1,0 +1,56 @@
+.plano1{
+    margin: 3rem;
+    display: flex;
+}
+.plano2 {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.plano3{
+    margin: 3rem;
+    display: flex;
+}
+
+.plano4{
+    margin: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about__img{
+    height: 498px;
+}
+
+.button{
+    margin-left: 45%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .plano1, .plano3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    .plano2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .plano4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+  }
