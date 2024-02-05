@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor padrão do texto (normalmente preto ou a cor definida pelo seu estilo) */
+}
+
+/*    NAV   */
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.nav-link {
+    color: black;
+}
+
+/* VIDEO TOPO / BOTAO VIDEO   */
+.video-topo-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-topo {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta o vídeo ao container mantendo a proporção */
+}
+
+@media screen and (max-width: 768px) {
+    .video-topo {
+        width: 100%; /* Ocupa 100% da largura disponível */
+        height: auto; /* Altura automática para manter a proporção original */
+    }
+}
+
+.btn-topo{
+    background-color: yellow;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    z-index: 2;
+    width: 200px;    
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave na propriedade box-shadow */
+}
+
+.btn-topo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao fazer hover */
+        background-color: rgb(221, 202, 29); /* Mantém a mesma cor de fundo para evitar transparência */
+}
+
+
+@media screen and (max-width: 768px){
+    .btn-topo {
+        visibility: hidden;
+    }
+}
+/* -----FIM------  VIDEO TOPO / BOTAO VIDEO   */
+
+/* Videos HOMEM / MULHER */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    height: 1317px;
+}
+
+.video-wrapper {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 49.9%; /* Ajuste conforme necessário para a margem entre os vídeos */
+    height: 1317px; /* Altura fixa desejada */
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.video2 {
+    align-items: center;
+}
+
+.video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: none;
+}
+
+.video-wrapper:hover .video-link {
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .video-container {
+        gap: 2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        flex-direction: row; /* Altera a direção para empilhamento vertical */
+        height: auto; /* Remove a altura fixa para tornar os vídeos proporcionais à largura */
+    }
+
+    .video-wrapper {
+        display: flex;
+        align-items: flex-start;
+        height: 366px; /* Altura automática para manter a proporção original */
+    }
+
+    .video {
+        object-position: top; /* Ajusta para exibir a parte superior da imagem */
+    }
+
+    .video2 {
+        align-items: flex-start; /* Ajusta o alinhamento do segundo vídeo para exibir a parte superior */
+    }
+}
+
+@media screen and (max-width: 768px){
+ .row {
+    text-align: center;
+ }
+}
