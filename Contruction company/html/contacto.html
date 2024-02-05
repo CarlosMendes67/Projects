@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BOX ICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+        <title>Moderna Construtora &mdash; Na Vanguarda da Construção</title>
+    </head>
+    <body>
+
+        <!-- SCROLL TOP -->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!-- HEADER -->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Moderna Construtora</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="/index.html" class="nav__link">Início</a></li>
+                      <li class="nav__item"><a href="/html/quemsomos.html" class="nav__link">Quem Somos</a></li>
+                      <li class="nav__item"><a href="/html/servicos.html" class="nav__link">Serviços</a></li>
+                      <li class="nav__item"><a href="/html/projetos.html" class="nav__link">Projetos</a></li>
+                      <li class="nav__item"><a href="/html/contacto.html" class="nav__link">Contacto</a></li>
+                      <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+          <!-- FORMULARIO DE CONTACTO -->
+          <section class="contact-us">
+            <div class="containercontacto">
+              <div class="contact-us__right">
+                <form action="http://localhost:3000/enviar-email"  target="index.html" method="post" class="contact-us__form form1">
+                  <input type="hidden" name="_replyto" value="modernaconstrutora4@outlook.com">
+                  <h2 class="section-title about__initial"> Pedido de contacto</h2>
+                  <div class="form__col form__col--1 u-margin-bottom-small">
+                    <div class="form__group">
+                      <label for="name" class="form__label">Nome</label>
+                      <input
+                        class="form__input"
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        style="width: 200px; height: 25px; margin-bottom: 10px;"
+                        placeholder="Antonio Paredes"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+          
+                    <div class="form__group">
+                      <label for="contact-email" class="form__label">Email</label>
+                      <input
+                        class="form__input"
+                        type="text"
+                        name="email"
+                        id="email"
+                        style="width: 200px; height: 25px;margin-bottom: 10px;"
+                        placeholder="email@exemplo.com"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+          
+                  <div class="form__col form__col--2 u-margin-bottom-mid">
+                    <div class="form__group">
+                      <label for="message" class="form__label">Mensagem</label>
+                      <textarea
+                        name="mensagem"
+                        type="text"
+                        id="mensagem"
+                        class="form__textarea"
+                        style="height: 150px; width: 400px; margin-bottom: 10px;"
+                        required
+                        placeholder="Escreva a sua mensagem"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button class="button" >Enviar mensagem</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          </section>
+        </main>
+
+        <!--FOOTER -->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Moderna Construção</a>
+                    <span class="footer__description">Redes Sociais</span>
+                    <div>
+                        <a href="https://www.facebook.com/" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Empresa</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Início</a></li>
+                        <li><a href="/html/quemsomos.html" class="footer__link">Quem Somos</a></li>
+                        <li><a href="/html/servicos.html" class="footer__link">Serviços</a></li>
+                        <li><a href="/html/projetos.html" class="footer__link">Projetos</a></li>
+                        <li><a href="/html/contacto.html" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- FOOTER INFORMACOES POLITICAS-->
+                <div class="footer__content">
+                    <h3 class="footer__title">Informação</h3>
+                    <ul>
+                      <li><a href="/html/pp.html" class="footer__link">Política de Privacidade</a></li>
+                      <li><a href="/html/al.html" class="footer__link">Aviso Legal</a></li>
+                      <li><a href="/html/pc.html" class="footer__link">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </footer>
+        <p class="footer__copy">&#169; 2023 Carlos Mendes. All rights reserved</p>
+
+        <!--SCROLL  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--MAIN JS-->
+        <script src="assets/js/app.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
+
